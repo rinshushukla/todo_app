@@ -92,7 +92,6 @@ app.post("/add-todo", async (req, res) => {
 app.get("/confirm-delete",async(req,res)=>{
   try {
     const { id , confirm } = req.query ;
-    console.log(confirm);
     if(confirm === "yes"){
       await  Todo.findByIdAndDelete(id);
 
