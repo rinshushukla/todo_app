@@ -10,7 +10,9 @@ const PORT = 3000;
 const app = express();
 // MongoDb connection Method
 connectmongodb();
-// --Schema Creation ---
+
+
+// --Schema Creation Using Mongose  ---
 
 app.use(express.json());
 app.set("view engine", "ejs");
